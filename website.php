@@ -8,5 +8,6 @@
 </head>
 <body>
     <h1>Welcome to this website! You logged successfully...!</h1>
+    <p><a href="./logout.php">LOGOUT</a></p>
 </body>
 </html>
