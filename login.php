@@ -1,4 +1,26 @@
+<?php
 
+$user = 'admin';
+
+session_start();
+
+if(isset($_COOKIE['user']))
+{
+    if($_COOKIE['user']== $user)
+    {
+        $_SESSION['login'] = TRUE;
+
+        header('location: ./login.php');
+        exit();
+    }
+}
+
+if(!isset($_SESSION['login']))
+{
+    header('locatin: ./');
+    exit();
+}
+?>
 
 
 <!DOCTYPE html>
